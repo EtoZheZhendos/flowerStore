@@ -1,0 +1,166 @@
+{
+  "flowers": [
+    {
+      "id": "1",
+      "name": "Роза",
+      "price": 500,
+      "available": true,
+      "type": "кустовые",
+      "image": "https://images.unsplash.com/photo-1496062031456-07b8f162a322?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Роза — символ любви и красоты. Идеально подходит для романтических подарков."
+    },
+    {
+      "id": "2",
+      "name": "Тюльпан",
+      "price": 300,
+      "available": false,
+      "type": "обычные",
+      "image": "https://yaskravaklumba.com.ua/image/cache/catalog/osen/tulpan/multiflora/wallflower-500x500.jpg",
+      "description": "Тюльпан — весенний цветок, символизирующий новое начало и свежесть."
+    },
+    {
+      "id": "3",
+      "name": "Гвоздика",
+      "price": 200,
+      "available": true,
+      "type": "корзинка",
+      "image": "https://zvettorg.ru/upload/resize_cache/webp/iblock/d00/mjs5c6lx99v4hvt0ok61pd0xpqjps6hz.webp",
+      "description": "Гвоздика — универсальный цветок, подходящий для любого случая."
+    },
+    {
+      "id": "4",
+      "name": "Лилии",
+      "price": 600,
+      "available": true,
+      "type": "кустовые",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVesgegD8IfHDrYctyIVatMW3MIKQm00GmoQ&s",
+      "description": "Лилии — элегантные цветы, символизирующие чистоту и утонченность."
+    },
+    {
+      "id": "5",
+      "name": "Орхидея",
+      "price": 800,
+      "available": true,
+      "type": "обычные",
+      "image": "https://luxuryplants.ru/wa-data/public/shop/products/88/24/2488/images/37394/37394.750.jpg",
+      "description": "Орхидея — экзотический цветок, олицетворяющий роскошь и изысканность."
+    },
+    {
+      "id": "6",
+      "name": "Пион",
+      "price": 700,
+      "available": false,
+      "type": "кустовые",
+      "image": "https://example.com/peony.jpg",
+      "description": "Пион — пышный цветок, символизирующий богатство и процветание."
+    },
+    {
+      "id": "7",
+      "name": "Хризантема",
+      "price": 400,
+      "available": true,
+      "type": "корзинка",
+      "image": "https://example.com/chrysanthemum.jpg",
+      "description": "Хризантема — символ долголетия и счастья."
+    },
+    {
+      "id": "8",
+      "name": "Гербера",
+      "price": 350,
+      "available": true,
+      "type": "обычные",
+      "image": "https://example.com/gerbera.jpg",
+      "description": "Гербера — яркий и жизнерадостный цветок, поднимающий настроение."
+    },
+    {
+      "id": "9",
+      "name": "Ирис",
+      "price": 450,
+      "available": false,
+      "type": "кустовые",
+      "image": "https://example.com/iris.jpg",
+      "description": "Ирис — символ веры, надежды и мудрости."
+    },
+    {
+      "id": "10",
+      "name": "Лаванда",
+      "price": 250,
+      "available": true,
+      "type": "обычные",
+      "image": "https://example.com/lavender.jpg",
+      "description": "Лаванда — ароматный цветок, известный своими успокаивающими свойствами."
+    },
+    {
+      "id": "11",
+      "name": "Подсолнух",
+      "price": 300,
+      "available": true,
+      "type": "корзинка",
+      "image": "https://example.com/sunflower.jpg",
+      "description": "Подсолнух — символ солнца, тепла и оптимизма."
+    },
+    {
+      "id": "12",
+      "name": "Гиацинт",
+      "price": 400,
+      "available": false,
+      "type": "кустовые",
+      "image": "https://example.com/hyacinth.jpg",
+      "description": "Гиацинт — ароматный весенний цветок, символизирующий возрождение."
+    },
+    {
+      "id": "13",
+      "name": "Фрезия",
+      "price": 500,
+      "available": true,
+      "type": "обычные",
+      "image": "https://example.com/freesia.jpg",
+      "description": "Фрезия — нежный цветок, символизирующий доверие и дружбу."
+    },
+    {
+      "id": "14",
+      "name": "Анемон",
+      "price": 350,
+      "available": true,
+      "type": "корзинка",
+      "image": "https://example.com/anemone.jpg",
+      "description": "Анемон — символ хрупкости и нежности."
+    },
+    {
+      "id": "15",
+      "name": "Ранункулюс",
+      "price": 600,
+      "available": false,
+      "type": "кустовые",
+      "image": "https://example.com/ranunculus.jpg",
+      "description": "Ранункулюс — пышный цветок, символизирующий очарование и привлекательность."
+    },
+    {
+      "id": "16",
+      "name": "Гортензия",
+      "price": 700,
+      "available": true,
+      "type": "обычные",
+      "image": "https://example.com/hydrangea.jpg",
+      "description": "Гортензия — символ благодарности и искренних чувств."
+    },
+    {
+      "id": "17",
+      "name": "Эустома",
+      "price": 800,
+      "available": true,
+      "type": "корзинка",
+      "image": "https://example.com/eustoma.jpg",
+      "description": "Эустома — элегантный цветок, символизирующий благородство и изысканность."
+    },
+    {
+      "id": "18",
+      "name": "Альстромерия",
+      "price": 450,
+      "available": false,
+      "type": "кустовые",
+      "image": "https://example.com/alstroemeria.jpg",
+      "description": "Альстромерия — символ дружбы и преданности."
+    }
+  ]
+}

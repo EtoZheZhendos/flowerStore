@@ -1,106 +1,50 @@
-<template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
-
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
-      </q-toolbar>
-    </q-header>
-
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-    >
-      <q-list>
-        <q-item-label
-          header
-        >
-          Essential Links
-        </q-item-label>
-
-        <EssentialLink
-          v-for="link in linksList"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
-    </q-drawer>
-
-    <q-page-container>
-      <router-view />
-    </q-page-container>
-  </q-layout>
-</template>
+<template lang="pug">
+q-layout(view="lHh Lpr lFf")
+  q-header(elevated)
+   q-toolbar-title Цветочный магазин
+    q-toolbar
+      div(class="row items-center justify-center full-width")
+        q-input(
+          v-model="searchQuery",
+          label="Поиск цветов",
+          outlined,
+          dense,
+          rounded,
+          class="bg-white",
+          style="min-width: 800px",
+          clearable
+        )
+          template(v-slot:append)
+            q-icon(
+              v-if="searchQuery",
+              name="close",
+              class="cursor-pointer",
+              @click="searchQuery = ''"
+            )
+  q-page-container
+    router-view(:searchQuery="searchQuery")
+  </template>
 
 <script setup>
-import { ref } from 'vue'
-import EssentialLink from 'components/EssentialLink.vue'
+import { ref, watch } from "vue";
+import { useFlowerStore } from "src/store/flowerStore.js";
 
-defineOptions({
-  name: 'MainLayout'
-})
+const flowerStore = useFlowerStore();
+const searchQuery = ref("");
 
-const linksList = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
+watch(
+  () => searchQuery.value,
+  async (value) => {
+    if (value === "") {
+      await flowerStore.resetFlowers();
+    }
+    flowerStore.searchFlowers(value);
   }
-]
-
-const leftDrawerOpen = ref(false)
-
-function toggleLeftDrawer () {
-  leftDrawerOpen.value = !leftDrawerOpen.value
-}
+);
 </script>
+
+<style scoped>
+.q-input.rounded {
+  border-radius: 24px;
+}
+</style>

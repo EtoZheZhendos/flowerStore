@@ -1,15 +1,8 @@
-<template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
-  </q-page>
+<template lang="pug">
+q-page
+ FlowerList
 </template>
 
 <script setup>
-defineOptions({
-  name: 'IndexPage'
-});
+import FlowerList from "src/components/lists/FlowerList.vue";
 </script>
