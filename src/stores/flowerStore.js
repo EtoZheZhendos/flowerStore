@@ -59,6 +59,11 @@ export const useFlowerStore = defineStore("flower", {
         order === "asc" ? a.price - b.price : b.price - a.price
       );
     },
+    sortStringFlowers(order = "asc") {
+      this.filteredFlowers.sort((a, b) =>
+        order === "asc" ? a.name - b.name : b.name - a.name
+      );
+    },
     async fetchFlowerById(id) {
       this.loading = true;
       this.error = null;

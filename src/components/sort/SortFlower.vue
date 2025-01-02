@@ -3,10 +3,16 @@
       q-list
         q-item(clickable v-close-popup @click="sortFlowers('asc')")
           q-item-section
-            q-item-label Сортировать по возрастанию
+            q-item-label Сортировать по возрастанию (Цена)
         q-item(clickable v-close-popup @click="sortFlowers('desc')")
           q-item-section
-            q-item-label Сортировать по убыванию
+            q-item-label Сортировать по убыванию (Цена)
+        q-item(clickable v-close-popup @click="sortFlowers('asc')")
+            q-item-section
+                q-item-label Сортировать по возрастанию (Название)
+        q-item(clickable v-close-popup @click="sortFlowers('desc')")
+            q-item-section
+                q-item-label Сортировать по убыванию (Название)
         q-separator
         q-item(clickable v-close-popup @click="resetSort")
           q-item-section
@@ -24,5 +30,9 @@ const resetSort = async () => {
 
 const sortFlowers = async (order) => {
   await flowerStore.sortFlowers(order);
+};
+
+const sortString = async (order) => {
+  await flowerStore.sortStringFlowers(order);
 };
 </script>
