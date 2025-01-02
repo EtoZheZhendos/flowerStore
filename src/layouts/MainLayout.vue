@@ -10,7 +10,7 @@ q-layout
       div(class="flex items-center")
         sort-flower(color="accent")
   q-page-container
-    router-view(:searchQuery="searchQuery")
+    router-view
   </template>
 
 <script setup>

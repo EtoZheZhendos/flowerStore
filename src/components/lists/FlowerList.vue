@@ -11,28 +11,25 @@ import { computed, onMounted } from "vue";
 import { useFlowerStore } from "src/stores/flowerStore.js";
 import FlowerItem from "src/components/items-for-list/FlowerItem.vue";
 
-const props = defineProps({
-  searchQuery: String,
-});
-
 const flowerStore = useFlowerStore();
-
-onMounted(() => {
-  flowerStore.fetchFlowers();
-});
 
 const deleteFlower = async (id) => {
   await flowerStore.deleteFlower(id);
 };
 
-const selectFlower = (id) => {
-  flowerStore.fetchFlowerById(id).then((response) => {
+const selectFlower = async (id) => {
+  await flowerStore.fetchFlowerById(id).then((response) => {
     console.log("Выбранный цветок:", response.data);
   });
 };
 
 const filteredFlowers = computed(() => flowerStore.getFilteredFlowers);
+
+onMounted(() => {
+  flowerStore.fetchFlowers();
+});
 </script>
+
 <style scoped>
 .flower-list {
   background: linear-gradient(135deg, #f5f7fa, #c3cfe2);

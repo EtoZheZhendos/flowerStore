@@ -2,20 +2,20 @@
 q-page(class="q-pa-md")
   div(v-if="flower")
     q-card(class="my-card")
-      q-img(:src="flower.image",:alt="flower.name", class="card-image", :ratio="21/9",style="height: 500px; object-fit: cover;")
+      q-img(:src="flower.image" :alt="flower.name" class="card-image" :ratio="21/9" style="height: 500px; object-fit: cover;")
       q-card-section
         div(class="text-h5 q-mb-sm") {{ flower.name }}
         div(class="text-subtitle1 q-mb-sm") Цена: {{ flower.price }} руб.
         div(class="text-subtitle1 q-mb-sm") Тип: {{ flower.type }}
         div(class="text-subtitle1 q-mb-sm") Наличие: {{ flower.available ? "В наличии" : "Нет в наличии" }}
         div(class="text-body1 q-mb-md") {{ flower.description }}
-        div(class="text-subtitle1 q-mb-sm") Страна производитель: {{ flower.mau }}
+        div(class="text-subtitle1 q-mb-sm") Страна производитель: {{ flower.manufactured }}
         div(class="row q-gutter-sm")
-          q-btn(color="primary", label="Купить")
-          q-btn(color="secondary", label="Добавить в корзину")
-    q-btn(class="q-mt-md", color="grey", label="Назад", @click="$router.go(-1)")
-  div(v-else-if="loading", class="text-center q-mt-md")
-    q-spinner(size="50px", color="primary")
+          q-btn(color="accent" label="Купить")
+          q-btn(color="primary" label="Добавить в корзину")
+    q-btn(class="q-mt-md" color="primary" label="Назад" @click="$router.go(-1)")
+  div(v-else-if="loading" class="text-center q-mt-md")
+    q-spinner(size="50px" color="primary")
   div(v-else, class="text-grey") Цветок не найден.
 </template>
 
