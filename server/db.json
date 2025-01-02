@@ -7,7 +7,8 @@
       "available": true,
       "type": "кустовые",
       "image": "https://images.unsplash.com/photo-1496062031456-07b8f162a322?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "description": "Роза — символ любви и красоты. Идеально подходит для романтических подарков."
+      "description": "Роза — символ любви и красоты. Идеально подходит для романтических подарков.",
+      "manufactured": "Россия"
     },
     {
       "id": "2",
@@ -16,7 +17,8 @@
       "available": false,
       "type": "обычные",
       "image": "https://yaskravaklumba.com.ua/image/cache/catalog/osen/tulpan/multiflora/wallflower-500x500.jpg",
-      "description": "Тюльпан — весенний цветок, символизирующий новое начало и свежесть."
+      "description": "Тюльпан — весенний цветок, символизирующий новое начало и свежесть.",
+      "manufactured": "Россия"
     },
     {
       "id": "3",
@@ -25,7 +27,8 @@
       "available": true,
       "type": "корзинка",
       "image": "https://zvettorg.ru/upload/resize_cache/webp/iblock/d00/mjs5c6lx99v4hvt0ok61pd0xpqjps6hz.webp",
-      "description": "Гвоздика — универсальный цветок, подходящий для любого случая."
+      "description": "Гвоздика — универсальный цветок, подходящий для любого случая.",
+      "manufactured": "Россия"
     },
     {
       "id": "4",
@@ -34,7 +37,8 @@
       "available": true,
       "type": "кустовые",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVesgegD8IfHDrYctyIVatMW3MIKQm00GmoQ&s",
-      "description": "Лилии — элегантные цветы, символизирующие чистоту и утонченность."
+      "description": "Лилии — элегантные цветы, символизирующие чистоту и утонченность.",
+      "manufactured": "Россия"
     },
     {
       "id": "5",
@@ -43,7 +47,8 @@
       "available": true,
       "type": "обычные",
       "image": "https://luxuryplants.ru/wa-data/public/shop/products/88/24/2488/images/37394/37394.750.jpg",
-      "description": "Орхидея — экзотический цветок, олицетворяющий роскошь и изысканность."
+      "description": "Орхидея — экзотический цветок, олицетворяющий роскошь и изысканность.",
+      "manufactured": "Россия"
     },
     {
       "id": "6",
@@ -52,7 +57,8 @@
       "available": false,
       "type": "кустовые",
       "image": "https://example.com/peony.jpg",
-      "description": "Пион — пышный цветок, символизирующий богатство и процветание."
+      "description": "Пион — пышный цветок, символизирующий богатство и процветание.",
+      "manufactured": "Россия"
     },
     {
       "id": "7",
@@ -61,7 +67,8 @@
       "available": true,
       "type": "корзинка",
       "image": "https://example.com/chrysanthemum.jpg",
-      "description": "Хризантема — символ долголетия и счастья."
+      "description": "Хризантема — символ долголетия и счастья.",
+      "manufactured": "Россия"
     },
     {
       "id": "8",
@@ -70,7 +77,8 @@
       "available": true,
       "type": "обычные",
       "image": "https://example.com/gerbera.jpg",
-      "description": "Гербера — яркий и жизнерадостный цветок, поднимающий настроение."
+      "description": "Гербера — яркий и жизнерадостный цветок, поднимающий настроение.",
+      "manufactured": "Россия"
     },
     {
       "id": "9",
@@ -79,7 +87,8 @@
       "available": false,
       "type": "кустовые",
       "image": "https://example.com/iris.jpg",
-      "description": "Ирис — символ веры, надежды и мудрости."
+      "description": "Ирис — символ веры, надежды и мудрости.",
+      "manufactured": "Россия"
     },
     {
       "id": "10",
@@ -88,7 +97,8 @@
       "available": true,
       "type": "обычные",
       "image": "https://example.com/lavender.jpg",
-      "description": "Лаванда — ароматный цветок, известный своими успокаивающими свойствами."
+      "description": "Лаванда — ароматный цветок, известный своими успокаивающими свойствами.",
+      "manufactured": "Беларусь"
     },
     {
       "id": "11",
@@ -97,7 +107,8 @@
       "available": true,
       "type": "корзинка",
       "image": "https://example.com/sunflower.jpg",
-      "description": "Подсолнух — символ солнца, тепла и оптимизма."
+      "description": "Подсолнух — символ солнца, тепла и оптимизма.",
+      "manufactured": "Беларусь"
     },
     {
       "id": "12",
@@ -106,7 +117,8 @@
       "available": false,
       "type": "кустовые",
       "image": "https://example.com/hyacinth.jpg",
-      "description": "Гиацинт — ароматный весенний цветок, символизирующий возрождение."
+      "description": "Гиацинт — ароматный весенний цветок, символизирующий возрождение.",
+      "manufactured": "Беларусь"
     },
     {
       "id": "13",
@@ -115,7 +127,8 @@
       "available": true,
       "type": "обычные",
       "image": "https://example.com/freesia.jpg",
-      "description": "Фрезия — нежный цветок, символизирующий доверие и дружбу."
+      "description": "Фрезия — нежный цветок, символизирующий доверие и дружбу.",
+      "manufactured": "Беларусь"
     },
     {
       "id": "14",
@@ -124,7 +137,8 @@
       "available": true,
       "type": "корзинка",
       "image": "https://example.com/anemone.jpg",
-      "description": "Анемон — символ хрупкости и нежности."
+      "description": "Анемон — символ хрупкости и нежности.",
+      "manufactured": "Беларусь"
     },
     {
       "id": "15",
@@ -133,7 +147,8 @@
       "available": false,
       "type": "кустовые",
       "image": "https://example.com/ranunculus.jpg",
-      "description": "Ранункулюс — пышный цветок, символизирующий очарование и привлекательность."
+      "description": "Ранункулюс — пышный цветок, символизирующий очарование и привлекательность.",
+      "manufactured": "Беларусь"
     },
     {
       "id": "16",
@@ -142,7 +157,8 @@
       "available": true,
       "type": "обычные",
       "image": "https://example.com/hydrangea.jpg",
-      "description": "Гортензия — символ благодарности и искренних чувств."
+      "description": "Гортензия — символ благодарности и искренних чувств.",
+      "manufactured": "Беларусь"
     },
     {
       "id": "17",
@@ -151,7 +167,8 @@
       "available": true,
       "type": "корзинка",
       "image": "https://example.com/eustoma.jpg",
-      "description": "Эустома — элегантный цветок, символизирующий благородство и изысканность."
+      "description": "Эустома — элегантный цветок, символизирующий благородство и изысканность.",
+      "manufactured": "Беларусь"
     },
     {
       "id": "18",
@@ -160,7 +177,8 @@
       "available": false,
       "type": "кустовые",
       "image": "https://example.com/alstroemeria.jpg",
-      "description": "Альстромерия — символ дружбы и преданности."
+      "description": "Альстромерия — символ дружбы и преданности.",
+      "manufactured": "Беларусь"
     }
   ]
 }

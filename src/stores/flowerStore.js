@@ -35,12 +35,8 @@ export const useFlowerStore = defineStore("flower", {
       this.filteredFlowers = this.flowers.filter(
         (flower) =>
           flower?.name?.toLowerCase().includes(lowerCaseQuery) ||
-          flower?.type?.toLowerCase().includes(lowerCaseQuery)
+          flower?.manufactured?.toLowerCase().includes(lowerCaseQuery)
       );
-    },
-
-    resetFlowers() {
-      this.filteredFlowers = this.flowers;
     },
 
     async deleteFlower(id) {
@@ -58,7 +54,11 @@ export const useFlowerStore = defineStore("flower", {
         this.loading = false;
       }
     },
-
+    sortFlowers(order = "asc") {
+      this.filteredFlowers.sort((a, b) =>
+        order === "asc" ? a.price - b.price : b.price - a.price
+      );
+    },
     async fetchFlowerById(id) {
       this.loading = true;
       this.error = null;

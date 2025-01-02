@@ -1,34 +1,22 @@
 <template lang="pug">
-q-layout(view="lHh Lpr lFf")
-  q-header(elevated)
-   q-toolbar-title Цветочный магазин
-    q-toolbar
-      div(class="row items-center justify-center full-width")
-        q-input(
-          v-model="searchQuery",
-          label="Поиск цветов",
-          outlined,
-          dense,
-          rounded,
-          class="bg-white",
-          style="min-width: 800px",
-          clearable
-        )
+q-layout
+  q-header(elevated class="fixed header-style")
+   q-toolbar(class="flex items-center justify-between")
+      q-toolbar-title(class="text-h4 title-style") Цветочный магазин
+      div(class="flex-grow flex justify-center")
+        q-input(v-model="searchQuery" label="Поиск цветов" outlined dense rounded   class="bg-white search-input" style="min-width: 300px;" clearable)
           template(v-slot:append)
-            q-icon(
-              v-if="searchQuery",
-              name="close",
-              class="cursor-pointer",
-              @click="searchQuery = ''"
-            )
+      q-icon(v-if="searchQuery" name="close" class="cursor-pointer" @click="searchQuery = ''")
+      div(class="flex items-center")
+        sort-flower(color="accent")
   q-page-container
     router-view(:searchQuery="searchQuery")
   </template>
 
 <script setup>
 import { ref, watch } from "vue";
-import { useFlowerStore } from "src/store/flowerStore.js";
-
+import { useFlowerStore } from "src/stores/flowerStore.js";
+import SortFlower from "src/components/sort/SortFlower.vue";
 const flowerStore = useFlowerStore();
 const searchQuery = ref("");
 
@@ -44,7 +32,39 @@ watch(
 </script>
 
 <style scoped>
-.q-input.rounded {
-  border-radius: 24px;
+.header-style {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.title-style {
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-left: 20px;
+}
+
+.search-input {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.search-input:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sort-button {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.sort-button:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 </style>

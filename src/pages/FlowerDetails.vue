@@ -9,6 +9,7 @@ q-page(class="q-pa-md")
         div(class="text-subtitle1 q-mb-sm") Тип: {{ flower.type }}
         div(class="text-subtitle1 q-mb-sm") Наличие: {{ flower.available ? "В наличии" : "Нет в наличии" }}
         div(class="text-body1 q-mb-md") {{ flower.description }}
+        div(class="text-subtitle1 q-mb-sm") Страна производитель: {{ flower.mau }}
         div(class="row q-gutter-sm")
           q-btn(color="primary", label="Купить")
           q-btn(color="secondary", label="Добавить в корзину")
@@ -21,7 +22,7 @@ q-page(class="q-pa-md")
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
-import { useFlowerStore } from "src/store/flowerStore.js";
+import { useFlowerStore } from "src/stores/flowerStore.js";
 
 const route = useRoute();
 const flowerStore = useFlowerStore();

@@ -1,6 +1,6 @@
 <template lang="pug">
 q-page
- FlowerList
+ flower-list
 </template>
 
 <script setup>
