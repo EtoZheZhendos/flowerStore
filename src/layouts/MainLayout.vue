@@ -8,7 +8,7 @@ q-layout
           template(v-slot:append)
       q-icon(v-if="searchQuery" name="close" class="cursor-pointer" @click="searchQuery = ''")
       div(class="flex items-center")
-        sort-flower(color="accent")
+        sort-flower(color="primary" class="bg-white")
   q-page-container
     router-view
   </template>

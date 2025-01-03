@@ -61,7 +61,9 @@ export const useFlowerStore = defineStore("flower", {
     },
     sortStringFlowers(order = "asc") {
       this.filteredFlowers.sort((a, b) =>
-        order === "asc" ? a.name - b.name : b.name - a.name
+        order === "asc"
+          ? a.name.localeCompare(b.name)
+          : b.name.localeCompare(a.name)
       );
     },
     async fetchFlowerById(id) {

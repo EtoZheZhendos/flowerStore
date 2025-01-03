@@ -1,38 +1,54 @@
 <template lang="pug">
-    q-btn-dropdown(color="accent" label="Сортировка" icon="sort")
-      q-list
-        q-item(clickable v-close-popup @click="sortFlowers('asc')")
-          q-item-section
-            q-item-label Сортировать по возрастанию (Цена)
-        q-item(clickable v-close-popup @click="sortFlowers('desc')")
-          q-item-section
-            q-item-label Сортировать по убыванию (Цена)
-        q-item(clickable v-close-popup @click="sortFlowers('asc')")
-            q-item-section
-                q-item-label Сортировать по возрастанию (Название)
-        q-item(clickable v-close-popup @click="sortFlowers('desc')")
-            q-item-section
-                q-item-label Сортировать по убыванию (Название)
-        q-separator
-        q-item(clickable v-close-popup @click="resetSort")
-          q-item-section
-            q-item-label Сбросить параметры сортировки
-    </template>
+  q-select(
+    rounded
+    v-model="selectedSortOption"
+    :options="sortOptions"
+    label="Сортировка"
+    outlined
+    dense
+    @update:model-value="handleSort"
+    class="sort-input"
+    style="width: 200px;"
+  )
+  </template>
 
 <script setup>
+import { ref } from "vue";
 import { useFlowerStore } from "src/stores/flowerStore.js";
 
 const flowerStore = useFlowerStore();
 
-const resetSort = async () => {
-  await flowerStore.fetchFlowers();
-};
+const sortOptions = [
+  { label: "По возрастанию (Цена)", value: { type: "price", order: "asc" } },
+  { label: "По убыванию (Цена)", value: { type: "price", order: "desc" } },
+  { label: "От А до Я", value: { type: "name", order: "asc" } },
+  { label: "От Я до А", value: { type: "name", order: "desc" } },
+  { label: "Сбросить сортировку", value: { type: "reset", order: null } },
+];
 
-const sortFlowers = async (order) => {
-  await flowerStore.sortFlowers(order);
-};
+const selectedSortOption = ref(null);
 
-const sortString = async (order) => {
-  await flowerStore.sortStringFlowers(order);
+const handleSort = (selectedOption) => {
+  const { type, order } = selectedOption.value;
+  if (type === "price") {
+    flowerStore.sortFlowers(order);
+  } else if (type === "name") {
+    flowerStore.sortStringFlowers(order);
+  } else if (type === "reset") {
+    flowerStore.fetchFlowers();
+  }
 };
 </script>
+
+<style scoped>
+.sort-input {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.sort-input:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+</style>
