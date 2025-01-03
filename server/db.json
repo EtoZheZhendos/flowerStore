@@ -56,7 +56,7 @@
       "price": 700,
       "available": false,
       "type": "кустовые",
-      "image": "https://example.com/peony.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVesgegD8IfHDrYctyIVatMW3MIKQm00GmoQ&s",
       "description": "Пион — пышный цветок, символизирующий богатство и процветание.",
       "manufactured": "Россия"
     },
@@ -66,7 +66,7 @@
       "price": 400,
       "available": true,
       "type": "корзинка",
-      "image": "https://example.com/chrysanthemum.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVesgegD8IfHDrYctyIVatMW3MIKQm00GmoQ&s",
       "description": "Хризантема — символ долголетия и счастья.",
       "manufactured": "Россия"
     },
@@ -76,7 +76,7 @@
       "price": 350,
       "available": true,
       "type": "обычные",
-      "image": "https://example.com/gerbera.jpg",
+      "image": "https://zvettorg.ru/upload/resize_cache/webp/iblock/d00/mjs5c6lx99v4hvt0ok61pd0xpqjps6hz.webp",
       "description": "Гербера — яркий и жизнерадостный цветок, поднимающий настроение.",
       "manufactured": "Россия"
     },
@@ -86,7 +86,7 @@
       "price": 450,
       "available": false,
       "type": "кустовые",
-      "image": "https://example.com/iris.jpg",
+      "image": "https://yaskravaklumba.com.ua/image/cache/catalog/osen/tulpan/multiflora/wallflower-500x500.jpg",
       "description": "Ирис — символ веры, надежды и мудрости.",
       "manufactured": "Россия"
     },
@@ -96,7 +96,7 @@
       "price": 250,
       "available": true,
       "type": "обычные",
-      "image": "https://example.com/lavender.jpg",
+      "image": "https://yaskravaklumba.com.ua/image/cache/catalog/osen/tulpan/multiflora/wallflower-500x500.jpg",
       "description": "Лаванда — ароматный цветок, известный своими успокаивающими свойствами.",
       "manufactured": "Беларусь"
     },
@@ -106,7 +106,7 @@
       "price": 300,
       "available": true,
       "type": "корзинка",
-      "image": "https://example.com/sunflower.jpg",
+      "image": "https://images.unsplash.com/photo-1496062031456-07b8f162a322?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "Подсолнух — символ солнца, тепла и оптимизма.",
       "manufactured": "Беларусь"
     },
@@ -116,7 +116,7 @@
       "price": 400,
       "available": false,
       "type": "кустовые",
-      "image": "https://example.com/hyacinth.jpg",
+      "image": "https://images.unsplash.com/photo-1496062031456-07b8f162a322?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "Гиацинт — ароматный весенний цветок, символизирующий возрождение.",
       "manufactured": "Беларусь"
     },
@@ -126,7 +126,7 @@
       "price": 500,
       "available": true,
       "type": "обычные",
-      "image": "https://example.com/freesia.jpg",
+      "image": "https://images.unsplash.com/photo-1496062031456-07b8f162a322?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "Фрезия — нежный цветок, символизирующий доверие и дружбу.",
       "manufactured": "Беларусь"
     },
@@ -136,7 +136,7 @@
       "price": 350,
       "available": true,
       "type": "корзинка",
-      "image": "https://example.com/anemone.jpg",
+      "image": "https://yaskravaklumba.com.ua/image/cache/catalog/osen/tulpan/multiflora/wallflower-500x500.jpg",
       "description": "Анемон — символ хрупкости и нежности.",
       "manufactured": "Беларусь"
     },
@@ -146,7 +146,7 @@
       "price": 600,
       "available": false,
       "type": "кустовые",
-      "image": "https://example.com/ranunculus.jpg",
+      "image": "https://yaskravaklumba.com.ua/image/cache/catalog/osen/tulpan/multiflora/wallflower-500x500.jpg",
       "description": "Ранункулюс — пышный цветок, символизирующий очарование и привлекательность.",
       "manufactured": "Беларусь"
     },
@@ -156,7 +156,7 @@
       "price": 700,
       "available": true,
       "type": "обычные",
-      "image": "https://example.com/hydrangea.jpg",
+      "image": "https://yaskravaklumba.com.ua/image/cache/catalog/osen/tulpan/multiflora/wallflower-500x500.jpg",
       "description": "Гортензия — символ благодарности и искренних чувств.",
       "manufactured": "Беларусь"
     },
@@ -166,7 +166,7 @@
       "price": 800,
       "available": true,
       "type": "корзинка",
-      "image": "https://example.com/eustoma.jpg",
+      "image": "https://yaskravaklumba.com.ua/image/cache/catalog/osen/tulpan/multiflora/wallflower-500x500.jpg",
       "description": "Эустома — элегантный цветок, символизирующий благородство и изысканность.",
       "manufactured": "Беларусь"
     },
@@ -176,7 +176,7 @@
       "price": 450,
       "available": false,
       "type": "кустовые",
-      "image": "https://example.com/alstroemeria.jpg",
+      "image": "https://yaskravaklumba.com.ua/image/cache/catalog/osen/tulpan/multiflora/wallflower-500x500.jpg",
       "description": "Альстромерия — символ дружбы и преданности.",
       "manufactured": "Беларусь"
     }

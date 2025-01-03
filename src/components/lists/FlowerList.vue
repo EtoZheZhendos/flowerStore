@@ -1,7 +1,7 @@
 <template lang="pug">
 q-page(class="q-pa-md")
-  div(v-if="filteredFlowers.length > 0" class="row q-col-gutter-xl")
-    div(v-for="flower in filteredFlowers" :key="flower.id" class="col-6")
+  div(v-if="filteredFlowers.length > 0" class="row q-col-gutter-sm")
+    div(v-for="flower in filteredFlowers" :key="flower.id" class="col-2")
       flower-item(:flower="flower" @select-flower="selectFlower" @delete-flower="deleteFlower")
   div(v-else, class="q-mt-md text-grey") Не удалось загрузить элементы списка.
 </template>
