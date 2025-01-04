@@ -1,5 +1,6 @@
 <template lang="pug">
   q-page(class="q-pa-md")
+    q-btn(flat round icon="arrow_back" @click="$router.go(-1)" class="q-mr-sm" color="accent")
     div(v-if="flower")
       q-card(class="my-card")
         q-img(:src="flower.image", :alt="flower.name", class="card-image", :ratio="21/9", style="height: 500px; object-fit: cover;")
@@ -11,8 +12,8 @@
           div(class="text-body1 q-mb-md") {{ flower.description }}
           div(class="text-subtitle1 q-mb-sm") Страна производитель: {{ flower.manufactured }}
           div(class="row q-gutter-sm")
-            q-btn(color="primary", label="Купить")
-            q-btn(color="secondary", label="Добавить в корзину")
+            q-btn(color="accent", label="Купить")
+            q-btn(color="primary", label="Добавить в корзину")
     div(v-else-if="loading", class="text-center q-mt-md")
       q-spinner(size="50px", color="primary")
     div(v-else, class="text-grey") Цветок не найден.

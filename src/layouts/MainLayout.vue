@@ -1,16 +1,22 @@
 <template lang="pug">
 q-layout
   q-header(elevated class="fixed header-style")
-   q-toolbar(class="flex items-center justify-between")
-      q-btn(flat round icon="arrow_back" @click="$router.go(-1)" class="q-mr-sm")
+    q-toolbar(class="flex items-center justify-between")
       q-toolbar-title(class="text-h4 title-style") Цветочный магазин
-      div(class="flex-grow flex justify-center")
-        q-input(v-model="searchQuery" label="Поиск цветов" outlined dense rounded   class="bg-white search-input" style="min-width: 300px;" clearable)
-      q-icon(v-if="searchQuery" name="close" class="cursor-pointer" @click="searchQuery = ''")
-      div(class="flex items-center")
-        sort-flower(color="primary" class="bg-white")
+      div(class="flex items-center q-gutter-x-md col-6")
+        q-input(v-model="searchQuery" label="Поиск цветов" outlined dense rounded class="bg-white search-input"
+        style="min-width: 600px;"
+        clearable
+          )
+          q-icon(
+                v-if="searchQuery"
+                name="close"
+                class="cursor-pointer"
+                @click="searchQuery = ''"
+              )
+      sort-flower(color="primary" class="bg-white")
   q-page-container
-    router-view
+      router-view
   </template>
 
 <script setup>

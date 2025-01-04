@@ -38,11 +38,11 @@ const deleteFlower = () => {
 <style scoped>
 .flower-item {
   background: white;
-  border-radius: 12px;
+  border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  margin-bottom: 10px;
-  max-width: 250px;
+  transition: all 0.5s ease;
+  margin-bottom: 25px;
+  max-width: 400px;
   cursor: pointer;
 }
 
@@ -54,7 +54,7 @@ const deleteFlower = () => {
 .flower-image {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  height: 150px;
+  height: 250px;
   object-fit: cover;
 }
 
